@@ -3,4 +3,9 @@ spring:
     name: spring-ai
   ai:
     openai:
-      api-key=${OPENAI_API_KEY}:
+      api-key: ${OPENAI_API_KEY}
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: qwen3
+        temperature: 0.2
